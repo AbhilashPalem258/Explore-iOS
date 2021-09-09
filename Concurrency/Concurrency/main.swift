@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
+AppcodaGCD()
 
+RunLoop.main.run()

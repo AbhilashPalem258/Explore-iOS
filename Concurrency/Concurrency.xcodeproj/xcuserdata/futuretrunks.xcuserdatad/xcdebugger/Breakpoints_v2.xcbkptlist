@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "98B211FC-433B-4C9B-81D0-2AB84955DD42"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7130F31-F2F6-4A94-A846-08BE44509139"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Concurrency/GCD/Appcoda/AppcodaGCD.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "concurrentInactiveAttrDelayQueue()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D7130F31-F2F6-4A94-A846-08BE44509139 - 870ab67c8ee68ea7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Concurrency.AppcodaGCD.concurrentInactiveAttrDelayQueue() -&gt; ()"
+                  moduleName = "Concurrency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/futuretrunks/Desktop/Explore-iOS/Concurrency/Concurrency/GCD/Appcoda/AppcodaGCD.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "770">
+               </Location>
+               <Location
+                  uuid = "D7130F31-F2F6-4A94-A846-08BE44509139 - 1b4219f33f62136c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Concurrency.AppcodaGCD.concurrentInactiveAttrDelayQueue() -&gt; ()"
+                  moduleName = "Concurrency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/futuretrunks/Desktop/Explore-iOS/Concurrency/Concurrency/GCD/Appcoda/AppcodaGCD.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "66">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "789822FF-7753-4333-98D9-E5D1B82296A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Concurrency/GCD/Appcoda/AppcodaGCD.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "concurrentInactiveAttrDelayQueue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7CD527A-F886-47A5-B38A-0F7EB8455E48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Concurrency/GCD/Appcoda/AppcodaGCD.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "concurrentInactiveAttrDelayQueue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
