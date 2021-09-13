@@ -19,13 +19,22 @@
      unspecified
  
  - main queue has a high priority by default compared to all QOS queues
+ 
+ global queue vs custom
+ In addition to concerns about efficiency and thread explosion, with your own concurrent queue, you can:
+
+ Specify a label that's meaningful to you for debugging
+ Suspend it
+ Set and get app-specific data
+ Submit barrier tasks
+ None of these are possible with the global concurrent queues.
  */
 
 import Foundation
 
 struct AppcodaGCD {
     init() {
-        workItemWait()
+        cancellableWorkItem()
     }
 }
 //Serial Queues
@@ -359,5 +368,28 @@ extension AppcodaGCD {
          "End of work item"
          "End of function"
          */
+    }
+    
+    func cancellableWorkItem() {
+        var workItem: DispatchWorkItem?
+        workItem = DispatchWorkItem {
+            for i in 1..<10 {
+                if let item = workItem, item.isCancelled {
+                    break
+                }
+                debugPrint("🟠 ", i)
+                Thread.sleep(forTimeInterval: 1)
+            }
+        }
+        
+        workItem?.notify(queue: .main) {
+            debugPrint("Done printing all numbers")
+        }
+        
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        queue.async(execute: workItem!)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {[weak workItem] in
+            workItem?.cancel()
+        }
     }
 }

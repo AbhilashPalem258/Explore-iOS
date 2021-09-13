@@ -7,6 +7,8 @@
 
 import Foundation
 
-AppcodaGCD()
+//_ = AppcodaGCD()
+//_ = GCDCodeCatRaceCondition()
+_ = ExploreOperationQueue()
 
 RunLoop.main.run()
