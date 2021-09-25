@@ -1,0 +1,17 @@
+
+ [
+    {
+        "name": "Swift",
+        "color": "red",
+        "model": 2016,
+        "company": "Maruti Suzuki",
+        "maxSpeedLimit": 120
+    },
+    {
+        "name": "Verna",
+        "color": "White",
+        "model": 2020,
+        "company": "Hyundai",
+        "maxSpeedLimit": 100
+    }
+]

@@ -1,0 +1,21 @@
+
+{
+    "landmarks": [
+        {
+            "name": "Qutub Minar",
+            "founding_year": "1193",
+            "location": {
+                "latitude": 28.5245,
+                "longitude": 77.1855
+            }
+        },
+        {
+            "name": "Rashtrapati Bhavan",
+            "founding_year": "1929",
+            "location": {
+                "latitude": 28.6143,
+                "longitude": 77.1994
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AKCache",
+        "repositoryURL": "https://github.com/AbhilashPalem258/AKCache.git",
+        "state": {
+          "branch": "main",
+          "revision": "6af26ffe8e38bdbd181a8c5f383d5a1e28b59a26",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
