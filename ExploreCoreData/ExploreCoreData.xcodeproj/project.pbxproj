@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008F0F36275A5CA800717A23 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0F35275A5CA800717A23 /* PersistentStorage.swift */; };
+		008F0F46275B65FB00717A23 /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0F45275B65FB00717A23 /* EmployeeDataRepository.swift */; };
+		008F0F48275B66B500717A23 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0F47275B66B500717A23 /* Employee.swift */; };
+		008F0F5B275B75F400717A23 /* CDEmployee+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0F5A275B75F400717A23 /* CDEmployee+extension.swift */; };
+		008F0F5D275B809800717A23 /* Logger+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0F5C275B809800717A23 /* Logger+extension.swift */; };
+		008F0FA8275BE0A800717A23 /* CDVehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA0275BE0A800717A23 /* CDVehicle+CoreDataClass.swift */; };
+		008F0FA9275BE0A800717A23 /* CDVehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA1275BE0A800717A23 /* CDVehicle+CoreDataProperties.swift */; };
+		008F0FAA275BE0A800717A23 /* CDPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA2275BE0A800717A23 /* CDPerson+CoreDataClass.swift */; };
+		008F0FAB275BE0A800717A23 /* CDPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA3275BE0A800717A23 /* CDPerson+CoreDataProperties.swift */; };
+		008F0FAC275BE0A800717A23 /* CDEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA4275BE0A800717A23 /* CDEmployee+CoreDataClass.swift */; };
+		008F0FAD275BE0A800717A23 /* CDEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA5275BE0A800717A23 /* CDEmployee+CoreDataProperties.swift */; };
+		008F0FAE275BE0A800717A23 /* CDPassport+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA6275BE0A800717A23 /* CDPassport+CoreDataClass.swift */; };
+		008F0FAF275BE0A800717A23 /* CDPassport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F0FA7275BE0A800717A23 /* CDPassport+CoreDataProperties.swift */; };
 		00FD69E926FEF1AB006247BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD69E826FEF1AB006247BE /* AppDelegate.swift */; };
 		00FD69EB26FEF1AB006247BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD69EA26FEF1AB006247BE /* SceneDelegate.swift */; };
 		00FD69ED26FEF1AB006247BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD69EC26FEF1AB006247BE /* ViewController.swift */; };
@@ -36,6 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008F0F35275A5CA800717A23 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		008F0F45275B65FB00717A23 /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
+		008F0F47275B66B500717A23 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		008F0F5A275B75F400717A23 /* CDEmployee+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+extension.swift"; sourceTree = "<group>"; };
+		008F0F5C275B809800717A23 /* Logger+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+extension.swift"; sourceTree = "<group>"; };
+		008F0F6E275B91D400717A23 /* ExploreCoreData v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExploreCoreData v2.xcdatamodel"; sourceTree = "<group>"; };
+		008F0F8F275BDF5F00717A23 /* ExploreCoreData v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExploreCoreData v3.xcdatamodel"; sourceTree = "<group>"; };
+		008F0FA0275BE0A800717A23 /* CDVehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		008F0FA1275BE0A800717A23 /* CDVehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		008F0FA2275BE0A800717A23 /* CDPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		008F0FA3275BE0A800717A23 /* CDPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		008F0FA4275BE0A800717A23 /* CDEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		008F0FA5275BE0A800717A23 /* CDEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		008F0FA6275BE0A800717A23 /* CDPassport+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPassport+CoreDataClass.swift"; sourceTree = "<group>"; };
+		008F0FA7275BE0A800717A23 /* CDPassport+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPassport+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		00FD69E526FEF1AB006247BE /* ExploreCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FD69E826FEF1AB006247BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FD69EA26FEF1AB006247BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +106,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008F0F59275B712400717A23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				008F0F5A275B75F400717A23 /* CDEmployee+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		00FD69DC26FEF1AB006247BE = {
 			isa = PBXGroup;
 			children = (
+				008F0FA0275BE0A800717A23 /* CDVehicle+CoreDataClass.swift */,
+				008F0FA1275BE0A800717A23 /* CDVehicle+CoreDataProperties.swift */,
+				008F0FA2275BE0A800717A23 /* CDPerson+CoreDataClass.swift */,
+				008F0FA3275BE0A800717A23 /* CDPerson+CoreDataProperties.swift */,
+				008F0FA4275BE0A800717A23 /* CDEmployee+CoreDataClass.swift */,
+				008F0FA5275BE0A800717A23 /* CDEmployee+CoreDataProperties.swift */,
+				008F0FA6275BE0A800717A23 /* CDPassport+CoreDataClass.swift */,
+				008F0FA7275BE0A800717A23 /* CDPassport+CoreDataProperties.swift */,
 				00FD69E726FEF1AB006247BE /* ExploreCoreData */,
 				00FD6A0126FEF1AE006247BE /* ExploreCoreDataTests */,
 				00FD6A0C26FEF1AE006247BE /* ExploreCoreDataUITests */,
@@ -101,6 +145,13 @@
 		00FD69E726FEF1AB006247BE /* ExploreCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				008F0F59275B712400717A23 /* Extensions */,
+				00FD6A2026FF04F4006247BE /* Controllers */,
+				00FD6A1F26FF04ED006247BE /* Models */,
+				00FD6A1E26FF04E4006247BE /* Managers */,
+				00FD6A1D26FF04D7006247BE /* CoreDataSupportFiles */,
+				00FD6A1C26FF04CC006247BE /* Constants */,
+				00FD6A1B26FF04C4006247BE /* Repository */,
 				00FD69E826FEF1AB006247BE /* AppDelegate.swift */,
 				00FD69EA26FEF1AB006247BE /* SceneDelegate.swift */,
 				00FD69EC26FEF1AB006247BE /* ViewController.swift */,
@@ -109,6 +160,7 @@
 				00FD69F626FEF1AE006247BE /* LaunchScreen.storyboard */,
 				00FD69F926FEF1AE006247BE /* Info.plist */,
 				00FD69F126FEF1AB006247BE /* ExploreCoreData.xcdatamodeld */,
+				008F0F5C275B809800717A23 /* Logger+extension.swift */,
 			);
 			path = ExploreCoreData;
 			sourceTree = "<group>";
@@ -129,6 +181,51 @@
 				00FD6A0F26FEF1AE006247BE /* Info.plist */,
 			);
 			path = ExploreCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		00FD6A1B26FF04C4006247BE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				008F0F45275B65FB00717A23 /* EmployeeDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		00FD6A1C26FF04CC006247BE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		00FD6A1D26FF04D7006247BE /* CoreDataSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		00FD6A1E26FF04E4006247BE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				008F0F35275A5CA800717A23 /* PersistentStorage.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		00FD6A1F26FF04ED006247BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				008F0F47275B66B500717A23 /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00FD6A2026FF04F4006247BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +358,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008F0FAE275BE0A800717A23 /* CDPassport+CoreDataClass.swift in Sources */,
 				00FD69ED26FEF1AB006247BE /* ViewController.swift in Sources */,
+				008F0FAA275BE0A800717A23 /* CDPerson+CoreDataClass.swift in Sources */,
+				008F0FAB275BE0A800717A23 /* CDPerson+CoreDataProperties.swift in Sources */,
 				00FD69E926FEF1AB006247BE /* AppDelegate.swift in Sources */,
+				008F0FAD275BE0A800717A23 /* CDEmployee+CoreDataProperties.swift in Sources */,
+				008F0FAC275BE0A800717A23 /* CDEmployee+CoreDataClass.swift in Sources */,
+				008F0FAF275BE0A800717A23 /* CDPassport+CoreDataProperties.swift in Sources */,
+				008F0F48275B66B500717A23 /* Employee.swift in Sources */,
+				008F0F46275B65FB00717A23 /* EmployeeDataRepository.swift in Sources */,
+				008F0F5D275B809800717A23 /* Logger+extension.swift in Sources */,
 				00FD69F326FEF1AB006247BE /* ExploreCoreData.xcdatamodeld in Sources */,
+				008F0FA9275BE0A800717A23 /* CDVehicle+CoreDataProperties.swift in Sources */,
+				008F0F5B275B75F400717A23 /* CDEmployee+extension.swift in Sources */,
 				00FD69EB26FEF1AB006247BE /* SceneDelegate.swift in Sources */,
+				008F0F36275A5CA800717A23 /* PersistentStorage.swift in Sources */,
+				008F0FA8275BE0A800717A23 /* CDVehicle+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,9 +712,11 @@
 		00FD69F126FEF1AB006247BE /* ExploreCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				008F0F8F275BDF5F00717A23 /* ExploreCoreData v3.xcdatamodel */,
+				008F0F6E275B91D400717A23 /* ExploreCoreData v2.xcdatamodel */,
 				00FD69F226FEF1AB006247BE /* ExploreCoreData.xcdatamodel */,
 			);
-			currentVersion = 00FD69F226FEF1AB006247BE /* ExploreCoreData.xcdatamodel */;
+			currentVersion = 008F0F8F275BDF5F00717A23 /* ExploreCoreData v3.xcdatamodel */;
 			path = ExploreCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
