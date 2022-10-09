@@ -1,0 +1,20 @@
+//
+//  Debug.xcconfig
+//  Explore-XCCONFIG
+//
+//  Created by Abhilash Palem on 18/09/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Base.xcconfig"
+
+
+IS_APP_NAME = $(inherited)-Debug
+IS_APP_VERSION = 0.3
+IS_APP_BUNDLE_ID = com.abhilash.ExploreDebug
+MY_APP_ICON = AppIconDuggu
+BACKEND_URL = https:\/\/www.google.co.in\/
+CONSUMER_KEY = ck_a57e4fa2e14c12ae3f400371cf2951ec3dea5_dev
+CONSUMER_SECRET = cs_c847caa35ce1041e9c69d239141f13f63bb22b_dev
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconElephant

@@ -1,0 +1,19 @@
+//
+//  Release.xcconfig
+//  Explore-XCCONFIG
+//
+//  Created by Abhilash Palem on 18/09/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Base.xcconfig"
+
+IS_APP_NAME = $(inherited)-Release
+IS_APP_VERSION = 0.1
+IS_APP_BUNDLE_ID = com.abhilash.ExploreRelease
+MY_APP_ICON = AppIconElephant
+BACKEND_URL = https://www.facebook.com/
+CONSUMER_KEY = ck_a57e4fa2e14c12f400371cf2951ec3dea5
+CONSUMER_SECRET = cs_c847caa35ce1041e9c69d239141f1f63bb22b
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconElephant

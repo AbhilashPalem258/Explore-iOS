@@ -1,0 +1,20 @@
+{
+    "aps": {
+        "alert": {
+            "title": "Test Notification Title",
+            "subtitle": "Test SubTitle",
+            "body": "Test Body"
+        },
+        "sound": "default",
+        "badge": 1,
+        "category": "TestCategory1",
+        "threadIdentifier": "Thread ID 1",
+        "mutable-content": 1
+    },
+    "attachments": [
+        "https://www.nps.gov/dena/learn/nature/images/wildlife-landing.jpg"
+    ],
+    "attachment-url": "https://www.nps.gov/dena/learn/nature/images/wildlife-landing.jpg",
+    "name": "Explore APNS",
+    "version": 1.0
+}

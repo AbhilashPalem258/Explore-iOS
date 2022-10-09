@@ -1,0 +1,11 @@
+/* 
+  Localizables.strings
+  Explore-Localization
+
+  Created by Abhilash Palem on 11/09/22.
+  
+*/
+"Country.title" = "France";
+"Details.first"="french Details 1";
+"Details.second"="french Details 2";
+"Details.third"="french Details 3";

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Consumer Secret</key>
+	<string>$(CONSUMER_SECRET)</string>
+	<key>Consumer Key</key>
+	<string>$(CONSUMER_KEY)</string>
+	<key>Backend URL</key>
+	<string>$(BACKEND_URL)</string>
+	<key>CFBundleVersion</key>
+	<string>$(IS_APP_VERSION)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(IS_APP_BUNDLE_ID)</string>
+	<key>CFBundleName</key>
+	<string>$(IS_APP_NAME)</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

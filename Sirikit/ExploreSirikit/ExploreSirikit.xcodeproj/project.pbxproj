@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0024710628E378DA00B0A162 /* ExploreSirikitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024710528E378DA00B0A162 /* ExploreSirikitApp.swift */; };
+		0024710828E378DA00B0A162 /* BankAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024710728E378DA00B0A162 /* BankAccountView.swift */; };
+		0024710A28E378DC00B0A162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0024710928E378DC00B0A162 /* Assets.xcassets */; };
+		0024710D28E378DC00B0A162 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0024710C28E378DC00B0A162 /* Preview Assets.xcassets */; };
+		0052592B28EB1C0C0029C70E /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052592A28EB1C0C0029C70E /* BankAccount.swift */; };
+		0052593428EB322A0029C70E /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0052593328EB322A0029C70E /* Intents.framework */; };
+		0052593728EB322A0029C70E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052593628EB322A0029C70E /* IntentHandler.swift */; };
+		0052593B28EB322A0029C70E /* KLPayment.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0052593128EB322A0029C70E /* KLPayment.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0052594028EB37F30029C70E /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052592A28EB1C0C0029C70E /* BankAccount.swift */; };
+		0052595B28EB75D70029C70E /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0052594728EB73450029C70E /* IntentsUI.framework */; };
+		0052595E28EB75D70029C70E /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052595D28EB75D70029C70E /* IntentViewController.swift */; };
+		0052596128EB75D70029C70E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0052595F28EB75D70029C70E /* MainInterface.storyboard */; };
+		0052596528EB75D70029C70E /* KLPaymentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0052595A28EB75D70029C70E /* KLPaymentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0052593928EB322A0029C70E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002470FA28E378DA00B0A162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0052593028EB322A0029C70E;
+			remoteInfo = KLPayment;
+		};
+		0052596328EB75D70029C70E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002470FA28E378DA00B0A162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0052595928EB75D70029C70E;
+			remoteInfo = KLPaymentUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0052593F28EB322A0029C70E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0052596528EB75D70029C70E /* KLPaymentUI.appex in Embed App Extensions */,
+				0052593B28EB322A0029C70E /* KLPayment.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0024710228E378DA00B0A162 /* ExploreSirikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreSirikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0024710528E378DA00B0A162 /* ExploreSirikitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSirikitApp.swift; sourceTree = "<group>"; };
+		0024710728E378DA00B0A162 /* BankAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountView.swift; sourceTree = "<group>"; };
+		0024710928E378DC00B0A162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0024710C28E378DC00B0A162 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0024711328E37ACA00B0A162 /* ExploreSirikit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExploreSirikit.entitlements; sourceTree = "<group>"; };
+		0052592A28EB1C0C0029C70E /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		0052593128EB322A0029C70E /* KLPayment.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KLPayment.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0052593328EB322A0029C70E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		0052593628EB322A0029C70E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		0052593828EB322A0029C70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0052594128EB49820029C70E /* KLPayment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KLPayment.entitlements; sourceTree = "<group>"; };
+		0052594728EB73450029C70E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		0052595A28EB75D70029C70E /* KLPaymentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KLPaymentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0052595D28EB75D70029C70E /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		0052596028EB75D70029C70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0052596228EB75D70029C70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002470FF28E378DA00B0A162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0052592E28EB322A0029C70E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052593428EB322A0029C70E /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0052595728EB75D70029C70E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052595B28EB75D70029C70E /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002470F928E378DA00B0A162 = {
+			isa = PBXGroup;
+			children = (
+				0024710428E378DA00B0A162 /* ExploreSirikit */,
+				0052593528EB322A0029C70E /* KLPayment */,
+				0052595C28EB75D70029C70E /* KLPaymentUI */,
+				0052593228EB322A0029C70E /* Frameworks */,
+				0024710328E378DA00B0A162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0024710328E378DA00B0A162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0024710228E378DA00B0A162 /* ExploreSirikit.app */,
+				0052593128EB322A0029C70E /* KLPayment.appex */,
+				0052595A28EB75D70029C70E /* KLPaymentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0024710428E378DA00B0A162 /* ExploreSirikit */ = {
+			isa = PBXGroup;
+			children = (
+				0052592C28EB31600029C70E /* KiloLocoPayments */,
+				0024711328E37ACA00B0A162 /* ExploreSirikit.entitlements */,
+				0024710528E378DA00B0A162 /* ExploreSirikitApp.swift */,
+				0024710928E378DC00B0A162 /* Assets.xcassets */,
+				0024710B28E378DC00B0A162 /* Preview Content */,
+			);
+			path = ExploreSirikit;
+			sourceTree = "<group>";
+		};
+		0024710B28E378DC00B0A162 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0024710C28E378DC00B0A162 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0052592C28EB31600029C70E /* KiloLocoPayments */ = {
+			isa = PBXGroup;
+			children = (
+				0024710728E378DA00B0A162 /* BankAccountView.swift */,
+				0052592A28EB1C0C0029C70E /* BankAccount.swift */,
+			);
+			path = KiloLocoPayments;
+			sourceTree = "<group>";
+		};
+		0052593228EB322A0029C70E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0052593328EB322A0029C70E /* Intents.framework */,
+				0052594728EB73450029C70E /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0052593528EB322A0029C70E /* KLPayment */ = {
+			isa = PBXGroup;
+			children = (
+				0052594128EB49820029C70E /* KLPayment.entitlements */,
+				0052593628EB322A0029C70E /* IntentHandler.swift */,
+				0052593828EB322A0029C70E /* Info.plist */,
+			);
+			path = KLPayment;
+			sourceTree = "<group>";
+		};
+		0052595C28EB75D70029C70E /* KLPaymentUI */ = {
+			isa = PBXGroup;
+			children = (
+				0052595D28EB75D70029C70E /* IntentViewController.swift */,
+				0052595F28EB75D70029C70E /* MainInterface.storyboard */,
+				0052596228EB75D70029C70E /* Info.plist */,
+			);
+			path = KLPaymentUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0024710128E378DA00B0A162 /* ExploreSirikit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0024711028E378DC00B0A162 /* Build configuration list for PBXNativeTarget "ExploreSirikit" */;
+			buildPhases = (
+				002470FE28E378DA00B0A162 /* Sources */,
+				002470FF28E378DA00B0A162 /* Frameworks */,
+				0024710028E378DA00B0A162 /* Resources */,
+				0052593F28EB322A0029C70E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0052593A28EB322A0029C70E /* PBXTargetDependency */,
+				0052596428EB75D70029C70E /* PBXTargetDependency */,
+			);
+			name = ExploreSirikit;
+			productName = ExploreSirikit;
+			productReference = 0024710228E378DA00B0A162 /* ExploreSirikit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0052593028EB322A0029C70E /* KLPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0052593C28EB322A0029C70E /* Build configuration list for PBXNativeTarget "KLPayment" */;
+			buildPhases = (
+				0052592D28EB322A0029C70E /* Sources */,
+				0052592E28EB322A0029C70E /* Frameworks */,
+				0052592F28EB322A0029C70E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLPayment;
+			productName = KLPayment;
+			productReference = 0052593128EB322A0029C70E /* KLPayment.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0052595928EB75D70029C70E /* KLPaymentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0052596628EB75D70029C70E /* Build configuration list for PBXNativeTarget "KLPaymentUI" */;
+			buildPhases = (
+				0052595628EB75D70029C70E /* Sources */,
+				0052595728EB75D70029C70E /* Frameworks */,
+				0052595828EB75D70029C70E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLPaymentUI;
+			productName = KLPaymentUI;
+			productReference = 0052595A28EB75D70029C70E /* KLPaymentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002470FA28E378DA00B0A162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					0024710128E378DA00B0A162 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					0052593028EB322A0029C70E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					0052595928EB75D70029C70E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 002470FD28E378DA00B0A162 /* Build configuration list for PBXProject "ExploreSirikit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002470F928E378DA00B0A162;
+			productRefGroup = 0024710328E378DA00B0A162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0024710128E378DA00B0A162 /* ExploreSirikit */,
+				0052593028EB322A0029C70E /* KLPayment */,
+				0052595928EB75D70029C70E /* KLPaymentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0024710028E378DA00B0A162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0024710D28E378DC00B0A162 /* Preview Assets.xcassets in Resources */,
+				0024710A28E378DC00B0A162 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0052592F28EB322A0029C70E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0052595828EB75D70029C70E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052596128EB75D70029C70E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002470FE28E378DA00B0A162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0024710828E378DA00B0A162 /* BankAccountView.swift in Sources */,
+				0052592B28EB1C0C0029C70E /* BankAccount.swift in Sources */,
+				0024710628E378DA00B0A162 /* ExploreSirikitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0052592D28EB322A0029C70E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052593728EB322A0029C70E /* IntentHandler.swift in Sources */,
+				0052594028EB37F30029C70E /* BankAccount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0052595628EB75D70029C70E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052595E28EB75D70029C70E /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0052593A28EB322A0029C70E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0052593028EB322A0029C70E /* KLPayment */;
+			targetProxy = 0052593928EB322A0029C70E /* PBXContainerItemProxy */;
+		};
+		0052596428EB75D70029C70E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0052595928EB75D70029C70E /* KLPaymentUI */;
+			targetProxy = 0052596328EB75D70029C70E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0052595F28EB75D70029C70E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0052596028EB75D70029C70E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0024710E28E378DC00B0A162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0024710F28E378DC00B0A162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0024711128E378DC00B0A162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExploreSirikit/ExploreSirikit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExploreSirikit/Preview Content\"";
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExploreSirikit/Info.plist;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri is used for searching and performing activity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0024711228E378DC00B0A162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExploreSirikit/ExploreSirikit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExploreSirikit/Preview Content\"";
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExploreSirikit/Info.plist;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri is used for searching and performing activity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0052593D28EB322A0029C70E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KLPayment/KLPayment.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KLPayment/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KLPayment;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.ETAActiveRide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0052593E28EB322A0029C70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KLPayment/KLPayment.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KLPayment/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KLPayment;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.ETAActiveRide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0052596728EB75D70029C70E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KLPaymentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KLPaymentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.ETAActiveRideUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0052596828EB75D70029C70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KLPaymentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KLPaymentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.ETAActiveRideUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002470FD28E378DA00B0A162 /* Build configuration list for PBXProject "ExploreSirikit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0024710E28E378DC00B0A162 /* Debug */,
+				0024710F28E378DC00B0A162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0024711028E378DC00B0A162 /* Build configuration list for PBXNativeTarget "ExploreSirikit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0024711128E378DC00B0A162 /* Debug */,
+				0024711228E378DC00B0A162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0052593C28EB322A0029C70E /* Build configuration list for PBXNativeTarget "KLPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0052593D28EB322A0029C70E /* Debug */,
+				0052593E28EB322A0029C70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0052596628EB75D70029C70E /* Build configuration list for PBXNativeTarget "KLPaymentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0052596728EB75D70029C70E /* Debug */,
+				0052596828EB75D70029C70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002470FA28E378DA00B0A162 /* Project object */;
+}
