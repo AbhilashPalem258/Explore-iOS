@@ -26,6 +26,7 @@
 		00B7FB2128CE22C1000C296D /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		00B7FB2828CE304A000C296D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		00B7FB2A28CE306A000C296D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00FC361228F891A300DB8410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 				en,
 				Base,
 				fr,
+				ar,
 			);
 			mainGroup = 00B7FB0628CE2129000C296D;
 			productRefGroup = 00B7FB1028CE2129000C296D /* Products */;
@@ -164,6 +166,7 @@
 			children = (
 				00B7FB2828CE304A000C296D /* en */,
 				00B7FB2A28CE306A000C296D /* fr */,
+				00FC361228F891A300DB8410 /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

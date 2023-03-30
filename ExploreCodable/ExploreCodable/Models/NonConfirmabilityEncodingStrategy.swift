@@ -6,24 +6,26 @@
 //
 
 import Foundation
-
+/*
+ https://benscheirman.com/2017/06/swift-json/
+ */
 fileprivate let jsonStr = """
 {
-    "positiveInfinity": Infinity,
-    "negInfinity": -Infinity,
-    "nan": NULL
+    "a": "NaN",
+    "b": "+Infinity",
+    "c": "-Infinity"
 }
 """
 
 fileprivate struct NonConfirmability: Decodable {
-    let positiveInf: String
-    let negativeInf: String
-    let nan: String
+    let a: Float
+    let b: Float
+    let c: Float
 }
 
 func decodeNonConfirmability() throws {
     let decoder = JSONDecoder()
-    decoder.nonConformingFloatDecodingStrategy = .convertFromString(positiveInfinity: "+Infinity", negativeInfinity: "-Infinity", nan: "Not an object")
+    decoder.nonConformingFloatDecodingStrategy = .convertFromString(positiveInfinity: "+Infinity", negativeInfinity: "-Infinity", nan: "NaN")
     let model = try decoder.decode(NonConfirmability.self, from: jsonStr.data(using: .utf8)!)
     print(model)
 }

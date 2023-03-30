@@ -30,6 +30,31 @@ struct WidgetProvider: TimelineProvider {
     }
 }
 
+struct IntentWidgetProvider: IntentTimelineProvider {
+    func placeholder(in context: Context) -> WidgetDataEntry {
+        let now = Date()
+        return WidgetDataEntry.init(date: now, currentTime: now.stringValue)
+    }
+    
+    func getSnapshot(for configuration: SelectCharacterIntent, in context: Context, completion: @escaping (WidgetDataEntry) -> Void) {
+        let now = Date()
+        let entry = WidgetDataEntry.init(date: now, currentTime: now.stringValue)
+        completion(entry)
+    }
+    
+    func getTimeline(for configuration: SelectCharacterIntent, in context: Context, completion: @escaping (Timeline<WidgetDataEntry>) -> Void) {
+        
+        let characterDetail = configuration.gameCharacter?.name
+        
+        let now = Date()
+        let entry = WidgetDataEntry.init(date: now, currentTime: characterDetail ?? now.stringValue)
+        
+        let nextDateToRefesh = Calendar.current.date(byAdding: .minute, value: 5, to: now) ?? Date()
+        let timeLine = Timeline(entries: [entry], policy: .after(nextDateToRefesh))
+        completion(timeLine)
+    }
+}
+
 extension Date {
     var stringValue: String {
         let dateFormatter = DateFormatter()

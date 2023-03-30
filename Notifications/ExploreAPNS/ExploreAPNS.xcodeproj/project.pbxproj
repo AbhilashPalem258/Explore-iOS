@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00312C7A28FC5644003CCC84 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055894E28F31710005D07C7 /* ImageLoader.swift */; };
 		0052597628EF0BED0029C70E /* ExploreAPNSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052597528EF0BED0029C70E /* ExploreAPNSApp.swift */; };
 		0052597828EF0BED0029C70E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052597728EF0BED0029C70E /* ContentView.swift */; };
 		0052597A28EF0BEE0029C70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0052597928EF0BEE0029C70E /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		0055895428F32390005D07C7 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055894928F306A6005D07C7 /* GalleryView.swift */; };
 		0055895528F32394005D07C7 /* GalleryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055894C28F30DE0005D07C7 /* GalleryItemCell.swift */; };
 		0055895628F32398005D07C7 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055894628F30689005D07C7 /* GalleryVC.swift */; };
-		0055895728F3242C005D07C7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055894E28F31710005D07C7 /* ImageLoader.swift */; };
 		0055895D28F336C7005D07C7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00630D9228F2BD6900558399 /* UserNotifications.framework */; };
 		0055895E28F336C7005D07C7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00630D9428F2BD6900558399 /* UserNotificationsUI.framework */; };
 		0055896128F336C7005D07C7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055896028F336C7005D07C7 /* NotificationViewController.swift */; };
@@ -30,6 +30,7 @@
 		00630D9828F2BD6900558399 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00630D9728F2BD6900558399 /* NotificationViewController.swift */; };
 		00630D9F28F2BD6900558399 /* TestCategory1Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00630D9028F2BD6900558399 /* TestCategory1Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0071001128EF12A70036DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0071001028EF12A70036DB35 /* AppDelegate.swift */; };
+		00A8FC902941DBE800B601DC /* AuthKey_AMCPC592X8.p8 in Resources */ = {isa = PBXBuildFile; fileRef = 00A8FC8F2941DBE800B601DC /* AuthKey_AMCPC592X8.p8 */; };
 		00B0509C28F1843A0015E5C6 /* TestCategory1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0509B28F1843A0015E5C6 /* TestCategory1.swift */; };
 		00B050A128F1B5DA0015E5C6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B050A028F1B5DA0015E5C6 /* DataService.swift */; };
 		00C54DF828F1C559003E8D61 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C54DF728F1C559003E8D61 /* NotificationService.swift */; };
@@ -103,6 +104,8 @@
 		00630D9C28F2BD6900558399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0071001028EF12A70036DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0071001228EF166C0036DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		00A8FC8D2941DB2900B601DC /* APNSTool.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = APNSTool.md; sourceTree = "<group>"; };
+		00A8FC8F2941DBE800B601DC /* AuthKey_AMCPC592X8.p8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthKey_AMCPC592X8.p8; sourceTree = "<group>"; };
 		00B0509B28F1843A0015E5C6 /* TestCategory1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCategory1.swift; sourceTree = "<group>"; };
 		00B050A028F1B5DA0015E5C6 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		00B050A228F1B9B20015E5C6 /* background.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = background.json; sourceTree = "<group>"; };
@@ -178,6 +181,7 @@
 		0052597428EF0BED0029C70E /* ExploreAPNS */ = {
 			isa = PBXGroup;
 			children = (
+				00A8FC8E2941DBCC00B601DC /* APNS Tool Tester */,
 				0055894528F304F8005D07C7 /* GalleryVC */,
 				00B0509D28F1ACE00015E5C6 /* LocalNotifications */,
 				00B0509A28F1841C0015E5C6 /* Category */,
@@ -192,7 +196,6 @@
 				00E36BB328F166D5002F57BB /* UserNotificationHandler.swift */,
 				00B050A028F1B5DA0015E5C6 /* DataService.swift */,
 				00C54E0328F1C9F5003E8D61 /* ImageStorage.swift */,
-				0055894E28F31710005D07C7 /* ImageLoader.swift */,
 			);
 			path = ExploreAPNS;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 		0055894528F304F8005D07C7 /* GalleryVC */ = {
 			isa = PBXGroup;
 			children = (
+				0055894E28F31710005D07C7 /* ImageLoader.swift */,
 				0055895028F31ECE005D07C7 /* ViewController */,
 				0055894828F30691005D07C7 /* View */,
 				0055895228F31F00005D07C7 /* GallerySwiftUIView.swift */,
@@ -266,6 +270,15 @@
 				00630D9C28F2BD6900558399 /* Info.plist */,
 			);
 			path = TestCategory1Content;
+			sourceTree = "<group>";
+		};
+		00A8FC8E2941DBCC00B601DC /* APNS Tool Tester */ = {
+			isa = PBXGroup;
+			children = (
+				00A8FC8F2941DBE800B601DC /* AuthKey_AMCPC592X8.p8 */,
+				00A8FC8D2941DB2900B601DC /* APNSTool.md */,
+			);
+			path = "APNS Tool Tester";
 			sourceTree = "<group>";
 		};
 		00B0509A28F1841C0015E5C6 /* Category */ = {
@@ -431,6 +444,7 @@
 				0052597D28EF0BEE0029C70E /* Preview Assets.xcassets in Resources */,
 				00E36BB728F16AD2002F57BB /* apns.json in Resources */,
 				0052597A28EF0BEE0029C70E /* Assets.xcassets in Resources */,
+				00A8FC902941DBE800B601DC /* AuthKey_AMCPC592X8.p8 in Resources */,
 				00C54E0228F1C5BB003E8D61 /* MutableContent.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,8 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0055895628F32398005D07C7 /* GalleryVC.swift in Sources */,
-				0055895728F3242C005D07C7 /* ImageLoader.swift in Sources */,
 				0055895428F32390005D07C7 /* GalleryView.swift in Sources */,
+				00312C7A28FC5644003CCC84 /* ImageLoader.swift in Sources */,
 				00630D9828F2BD6900558399 /* NotificationViewController.swift in Sources */,
 				0055895528F32394005D07C7 /* GalleryItemCell.swift in Sources */,
 			);
@@ -679,7 +693,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -711,7 +725,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -735,7 +749,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app.TestCategory2Content;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.TestCategory2Content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -760,7 +774,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app.TestCategory2Content;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.TestCategory2Content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -785,7 +799,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app.TestCategory1Content;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.TestCategory1Content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -810,7 +824,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app.TestCategory1Content;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.TestCategory1Content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -836,7 +850,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -862,7 +876,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chalo.app.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

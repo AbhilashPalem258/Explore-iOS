@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00312C7C28FDBBEE003CCC84 /* ArrayDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 00312C7B28FDBBEE003CCC84 /* ArrayDiff.json */; };
+		00312C7E28FDD015003CCC84 /* EnumBasedParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00312C7D28FDD015003CCC84 /* EnumBasedParsing.swift */; };
 		0093A5AD26F870AB00269DE1 /* CodingKeyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093A5AC26F870AB00269DE1 /* CodingKeyEncodable.swift */; };
 		0093A5B526F881B600269DE1 /* ExploreCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093A5B426F881B600269DE1 /* ExploreCodableTests.swift */; };
 		0093A5BD26F881D400269DE1 /* CodingKeyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093A5BC26F881D400269DE1 /* CodingKeyEncodable.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00312C7B28FDBBEE003CCC84 /* ArrayDiff.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = ArrayDiff.json; sourceTree = "<group>"; };
+		00312C7D28FDD015003CCC84 /* EnumBasedParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedParsing.swift; sourceTree = "<group>"; };
 		0093A5AC26F870AB00269DE1 /* CodingKeyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingKeyEncodable.swift; sourceTree = "<group>"; };
 		0093A5B226F881B600269DE1 /* ExploreCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploreCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0093A5B426F881B600269DE1 /* ExploreCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCodableTests.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				009B464026FB9F3E00BBD8A0 /* CodingUserInfoKey.swift */,
 				009B464226FBB69200BBD8A0 /* DateEncodingStrategy.swift */,
 				009B464426FC9C9600BBD8A0 /* NonConfirmabilityEncodingStrategy.swift */,
+				00312C7D28FDD015003CCC84 /* EnumBasedParsing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				00A3808A26F75E470070A221 /* landmarks.json */,
 				009879F526FA0D2D00EA89B2 /* cars.json */,
 				009879F726FA542400EA89B2 /* GiftedEmployee.json */,
+				00312C7B28FDBBEE003CCC84 /* ArrayDiff.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			files = (
 				00A3808126F75D970070A221 /* LaunchScreen.storyboard in Resources */,
 				00A3807E26F75D970070A221 /* Assets.xcassets in Resources */,
+				00312C7C28FDBBEE003CCC84 /* ArrayDiff.json in Resources */,
 				009879F626FA0D2D00EA89B2 /* cars.json in Resources */,
 				00A3807C26F75D940070A221 /* Main.storyboard in Resources */,
 				009879F826FA542400EA89B2 /* GiftedEmployee.json in Resources */,
@@ -266,6 +273,7 @@
 				009B464326FBB69200BBD8A0 /* DateEncodingStrategy.swift in Sources */,
 				00A3808D26F75F6C0070A221 /* Landmark.swift in Sources */,
 				009B464126FB9F3E00BBD8A0 /* CodingUserInfoKey.swift in Sources */,
+				00312C7E28FDD015003CCC84 /* EnumBasedParsing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,19 @@
 import UIKit
 import SwiftUI
 
+protocol GalleryViewDelegate: AnyObject {
+    func refreshClicked()
+}
+
 class GalleryView: UIView {
+    
+    weak var delegate: GalleryViewDelegate?
+    
+    private let refresher: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        return refreshControl
+    }()
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -33,6 +45,7 @@ class GalleryView: UIView {
     
     var attachments: [URL]? {
         didSet {
+            self.refresher.endRefreshing()
             collectionView.reloadData()
         }
     }
@@ -41,6 +54,7 @@ class GalleryView: UIView {
 private extension GalleryView {
     func configureCollectionView() {
         collectionView.dataSource = self
+        collectionView.refreshControl = refresher
         self.addSubview(collectionView)
         addCollectionViewConstraints()
     }
@@ -51,6 +65,10 @@ private extension GalleryView {
         collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+    }
+    
+    @objc func refresh() {
+        delegate?.refreshClicked()
     }
 }
 extension GalleryView: UICollectionViewDataSource {

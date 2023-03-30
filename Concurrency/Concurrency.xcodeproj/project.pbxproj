@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0036E2E1290EB238005A74D9 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036E2E0290EB238005A74D9 /* Operation.swift */; };
+		0036E2EE290FABCD005A74D9 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036E2ED290FABCD005A74D9 /* AsyncOperation.swift */; };
 		0085353F26E9DF5B0091D0EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085353E26E9DF5B0091D0EC /* main.swift */; };
 		0085354A26E9E0830091D0EC /* AppcodaGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085354926E9E0830091D0EC /* AppcodaGCD.swift */; };
 		0085354C26EA6F2C0091D0EC /* RaceConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085354B26EA6F2C0091D0EC /* RaceConditions.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0036E2E0290EB238005A74D9 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		0036E2ED290FABCD005A74D9 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		0085353B26E9DF5B0091D0EC /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		0085353E26E9DF5B0091D0EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0085354926E9E0830091D0EC /* AppcodaGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcodaGCD.swift; sourceTree = "<group>"; };
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0036E2EC290FA1F8005A74D9 /* CustomOperation */ = {
+			isa = PBXGroup;
+			children = (
+				0036E2ED290FABCD005A74D9 /* AsyncOperation.swift */,
+			);
+			path = CustomOperation;
+			sourceTree = "<group>";
+		};
 		0085353226E9DF5B0091D0EC = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +121,9 @@
 		00B5795B26EC650900298BFC /* OperationQueue */ = {
 			isa = PBXGroup;
 			children = (
+				0036E2EC290FA1F8005A74D9 /* CustomOperation */,
 				00B5795C26EC651F00298BFC /* OperationQueue.swift */,
+				0036E2E0290EB238005A74D9 /* Operation.swift */,
 			);
 			path = OperationQueue;
 			sourceTree = "<group>";
@@ -176,6 +190,8 @@
 				0085353F26E9DF5B0091D0EC /* main.swift in Sources */,
 				0085354A26E9E0830091D0EC /* AppcodaGCD.swift in Sources */,
 				00B5795D26EC651F00298BFC /* OperationQueue.swift in Sources */,
+				0036E2E1290EB238005A74D9 /* Operation.swift in Sources */,
+				0036E2EE290FABCD005A74D9 /* AsyncOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ML69X72R93;
+				DEVELOPMENT_TEAM = FY7LB4LG7Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -312,7 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ML69X72R93;
+				DEVELOPMENT_TEAM = FY7LB4LG7Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

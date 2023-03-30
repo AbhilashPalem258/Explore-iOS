@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G417" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDBusiness" representedClassName="CDBusiness" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDPersn" inverseName="job" inverseEntity="CDPersn"/>
+        <fetchedProperty name="contractors" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CDPersn" predicateString="type LIKE [c] &quot;contractor&quot; AND job == $FETCH_SOURCE"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="CDPersn" representedClassName="CDPersn" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBusiness" inverseName="people" inverseEntity="CDBusiness"/>
+        <fetchIndex name="byPropertyIndex">
+            <fetchIndexElement property="type" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <fetchRequest name="PersonFetchRequest" entity="CDPersn" predicateString="type CONTAINS &quot;contractor&quot;"/>
+    <elements>
+        <element name="CDBusiness" positionX="241.2092895507812" positionY="59.1185302734375" width="128" height="86"/>
+        <element name="CDPersn" positionX="-54" positionY="-9" width="128" height="88"/>
+    </elements>
+</model>

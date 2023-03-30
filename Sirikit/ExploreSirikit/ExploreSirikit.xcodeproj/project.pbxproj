@@ -20,6 +20,11 @@
 		0052595E28EB75D70029C70E /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052595D28EB75D70029C70E /* IntentViewController.swift */; };
 		0052596128EB75D70029C70E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0052595F28EB75D70029C70E /* MainInterface.storyboard */; };
 		0052596528EB75D70029C70E /* KLPaymentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0052595A28EB75D70029C70E /* KLPaymentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00FC360028F46EE800DB8410 /* MovieSearch.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 00FC35FF28F46EE800DB8410 /* MovieSearch.intentdefinition */; };
+		00FC360628F4726A00DB8410 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0052593328EB322A0029C70E /* Intents.framework */; };
+		00FC360928F4726A00DB8410 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC360828F4726A00DB8410 /* IntentHandler.swift */; };
+		00FC360D28F4726A00DB8410 /* MovieIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00FC360528F4726A00DB8410 /* MovieIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00FC361128F474AF00DB8410 /* MovieSearch.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 00FC35FF28F46EE800DB8410 /* MovieSearch.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,13 @@
 			remoteGlobalIDString = 0052595928EB75D70029C70E;
 			remoteInfo = KLPaymentUI;
 		};
+		00FC360B28F4726A00DB8410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002470FA28E378DA00B0A162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00FC360428F4726A00DB8410;
+			remoteInfo = MovieIntentExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +59,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				0052596528EB75D70029C70E /* KLPaymentUI.appex in Embed App Extensions */,
+				00FC360D28F4726A00DB8410 /* MovieIntentExtension.appex in Embed App Extensions */,
 				0052593B28EB322A0029C70E /* KLPayment.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -72,6 +85,10 @@
 		0052595D28EB75D70029C70E /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		0052596028EB75D70029C70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0052596228EB75D70029C70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FC35FF28F46EE800DB8410 /* MovieSearch.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MovieSearch.intentdefinition; sourceTree = "<group>"; };
+		00FC360528F4726A00DB8410 /* MovieIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MovieIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FC360828F4726A00DB8410 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		00FC360A28F4726A00DB8410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +115,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00FC360228F4726A00DB8410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FC360628F4726A00DB8410 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +132,7 @@
 				0024710428E378DA00B0A162 /* ExploreSirikit */,
 				0052593528EB322A0029C70E /* KLPayment */,
 				0052595C28EB75D70029C70E /* KLPaymentUI */,
+				00FC360728F4726A00DB8410 /* MovieIntentExtension */,
 				0052593228EB322A0029C70E /* Frameworks */,
 				0024710328E378DA00B0A162 /* Products */,
 			);
@@ -118,6 +144,7 @@
 				0024710228E378DA00B0A162 /* ExploreSirikit.app */,
 				0052593128EB322A0029C70E /* KLPayment.appex */,
 				0052595A28EB75D70029C70E /* KLPaymentUI.appex */,
+				00FC360528F4726A00DB8410 /* MovieIntentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +155,7 @@
 				0052592C28EB31600029C70E /* KiloLocoPayments */,
 				0024711328E37ACA00B0A162 /* ExploreSirikit.entitlements */,
 				0024710528E378DA00B0A162 /* ExploreSirikitApp.swift */,
+				00FC35FF28F46EE800DB8410 /* MovieSearch.intentdefinition */,
 				0024710928E378DC00B0A162 /* Assets.xcassets */,
 				0024710B28E378DC00B0A162 /* Preview Content */,
 			);
@@ -180,6 +208,15 @@
 			path = KLPaymentUI;
 			sourceTree = "<group>";
 		};
+		00FC360728F4726A00DB8410 /* MovieIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				00FC360828F4726A00DB8410 /* IntentHandler.swift */,
+				00FC360A28F4726A00DB8410 /* Info.plist */,
+			);
+			path = MovieIntentExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +234,7 @@
 			dependencies = (
 				0052593A28EB322A0029C70E /* PBXTargetDependency */,
 				0052596428EB75D70029C70E /* PBXTargetDependency */,
+				00FC360C28F4726A00DB8410 /* PBXTargetDependency */,
 			);
 			name = ExploreSirikit;
 			productName = ExploreSirikit;
@@ -237,6 +275,23 @@
 			productReference = 0052595A28EB75D70029C70E /* KLPaymentUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		00FC360428F4726A00DB8410 /* MovieIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FC360E28F4726A00DB8410 /* Build configuration list for PBXNativeTarget "MovieIntentExtension" */;
+			buildPhases = (
+				00FC360128F4726A00DB8410 /* Sources */,
+				00FC360228F4726A00DB8410 /* Frameworks */,
+				00FC360328F4726A00DB8410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieIntentExtension;
+			productName = MovieIntentExtension;
+			productReference = 00FC360528F4726A00DB8410 /* MovieIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +309,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					0052595928EB75D70029C70E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					00FC360428F4726A00DB8410 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -274,6 +332,7 @@
 				0024710128E378DA00B0A162 /* ExploreSirikit */,
 				0052593028EB322A0029C70E /* KLPayment */,
 				0052595928EB75D70029C70E /* KLPaymentUI */,
+				00FC360428F4726A00DB8410 /* MovieIntentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +362,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00FC360328F4726A00DB8410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,6 +379,7 @@
 				0024710828E378DA00B0A162 /* BankAccountView.swift in Sources */,
 				0052592B28EB1C0C0029C70E /* BankAccount.swift in Sources */,
 				0024710628E378DA00B0A162 /* ExploreSirikitApp.swift in Sources */,
+				00FC360028F46EE800DB8410 /* MovieSearch.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +400,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00FC360128F4726A00DB8410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FC360928F4726A00DB8410 /* IntentHandler.swift in Sources */,
+				00FC361128F474AF00DB8410 /* MovieSearch.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -345,6 +421,11 @@
 			isa = PBXTargetDependency;
 			target = 0052595928EB75D70029C70E /* KLPaymentUI */;
 			targetProxy = 0052596328EB75D70029C70E /* PBXContainerItemProxy */;
+		};
+		00FC360C28F4726A00DB8410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00FC360428F4726A00DB8410 /* MovieIntentExtension */;
+			targetProxy = 00FC360B28F4726A00DB8410 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,6 +577,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +611,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -644,6 +727,56 @@
 			};
 			name = Release;
 		};
+		00FC360F28F4726A00DB8410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MovieIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.MovieIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00FC361028F4726A00DB8410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27699ZW9VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MovieIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuttl.ios.MovieIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,6 +812,15 @@
 			buildConfigurations = (
 				0052596728EB75D70029C70E /* Debug */,
 				0052596828EB75D70029C70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FC360E28F4726A00DB8410 /* Build configuration list for PBXNativeTarget "MovieIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FC360F28F4726A00DB8410 /* Debug */,
+				00FC361028F4726A00DB8410 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,23 @@
+
+[
+    {
+        "type": "Vehicle",
+        "name": "chevrolet chevelle malibu",
+        "miles_per_gallon": 18,
+        "cylinders": 8,
+        "displacement": 307,
+        "horsepower": 130,
+        "weight_in_lbs": 3504,
+        "acceleration": 12,
+        "year": "1970-01-01",
+        "origin": "USA"
+    },
+     {
+        "type": "Actor",
+        "name": "Tom Cruise",
+        "age": 56,
+        "born_at": "Syracuse, NY",
+        "birthdate": "1970-01-01",
+        "photo": "https://jsonformatter.org/img/tom-cruise.jpg"
+    }
+]

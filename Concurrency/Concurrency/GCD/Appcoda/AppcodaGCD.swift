@@ -30,11 +30,14 @@
  None of these are possible with the global concurrent queues.
  */
 
+//TODO: Understand DispatchWorkItemFlags
+
+
 import Foundation
 
 struct AppcodaGCD {
     init() {
-        cancellableWorkItem()
+        asyncAndWait()
     }
 }
 //Serial Queues
@@ -70,6 +73,33 @@ extension AppcodaGCD {
             }
         }
         debugPrint("End queuesWithQOS execution")
+        
+        /*
+         Output:
+         "Start queuesWithQOS execution"
+         "End queuesWithQOS execution"
+         🏀  0
+         🏀  1
+         🏀  2
+         🏀  3
+         🏀  4
+         🏀  5
+         🏀  6
+         🏀  7
+         🏀  8
+         🏀  9
+         🥎  0
+         🥎  1
+         🥎  2
+         🥎  3
+         🥎  4
+         🥎  5
+         🥎  6
+         🥎  7
+         🥎  8
+         🥎  9
+
+         */
     }
     
     func queuesWithQOS() {
@@ -333,8 +363,10 @@ extension AppcodaGCD {
     
     func concurrentIterations() {
         DispatchQueue.concurrentPerform(iterations: 10) {
+            print(Thread.current)
             print("❤️ ", $0)
         }
+        print("End of Function")
         //create as many threads as iterations input and executes each on respective thread
     }
     
@@ -346,6 +378,7 @@ extension AppcodaGCD {
         }
         queue.asyncAndWait(execute: workItem)
         debugPrint("End of function")
+        
         /*
          Output:
          "Started executing work item"

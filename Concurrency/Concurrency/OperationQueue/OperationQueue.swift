@@ -11,32 +11,34 @@ import Foundation
  https://ali-akhtar.medium.com/concurrency-in-swift-custom-operations-part-4-154b60bff84c
  */
 
-struct ExploreOperationQueue {
-    init() {
+class ExploreOperationQueue: NSObject {
+    override init() {
+        super.init()
         dependencyOperation()
     }
 }
 extension ExploreOperationQueue {
     func blockOperation() {
         let operation = BlockOperation()
+        //Each execution block of a operation runs on different threads
         operation.addExecutionBlock {
-            print("🟢 first block operation started")
+            print("🟢 first block operation started on thread \(Thread.current)")
             Thread.sleep(forTimeInterval: 2)
-            print("🟢 first block operation completed")
+            print("🟢 first block operation completed on thread \(Thread.current)")
         }
         
         operation.addExecutionBlock {
-            print("🟣 second block operation started")
+            print("🟣 second block operation started on thread \(Thread.current)")
             Thread.sleep(forTimeInterval: 2)
-            print("🟣 second block operation completed")
+            print("🟣 second block operation completed on thread \(Thread.current)")
         }
         
         operation.addExecutionBlock {
-            print("🟡 third block operation started")
+            print("🟡 third block operation started on thread \(Thread.current)")
             Thread.sleep(forTimeInterval: 2)
-            print("🟡 third block operation completed")
+            print("🟡 third block operation completed on thread \(Thread.current)")
         }
-        
+                
         let queue = OperationQueue()
         queue.addOperations([operation], waitUntilFinished: true)
         print("Finished function")
@@ -45,36 +47,36 @@ extension ExploreOperationQueue {
     func dependencyOperation() {
         let operation = BlockOperation()
         operation.addExecutionBlock {
-            print("🟢 first block operation started")
+            print("🟢 first block operation started on thread \(Thread.current)")
             Thread.sleep(forTimeInterval: 2)
-            print("🟢 first block operation completed")
+            print("🟢 first block operation completed on thread \(Thread.current)")
         }
         
         operation.addExecutionBlock {
-            print("🟣 second block operation started")
+            print("🟣 second block operation started on thread \(Thread.current)")
             Thread.sleep(forTimeInterval: 2)
-            print("🟣 second block operation completed")
+            print("🟣 second block operation completed on thread \(Thread.current)")
         }
         
         operation.addExecutionBlock {
-            print("🟡 third block operation started")
+            print("🟡 third block operation started on thread \(Thread.current)")
             Thread.sleep(forTimeInterval: 2)
-            print("🟡 third block operation completed")
+            print("🟡 third block operation completed on thread \(Thread.current)")
         }
         
         let secondOperation = BlockOperation()
         secondOperation.queuePriority = .veryHigh
         secondOperation.addExecutionBlock {
-            print("🔵[Second operation] first block operation started")
+            print("🔵[Second operation] first block operation started on thread \(Thread.current)")
         }
         secondOperation.addExecutionBlock {
-            print("🟪 [Second operation] second block operation started")
+            print("🟪 [Second operation] second block operation started on thread \(Thread.current)")
         }
         secondOperation.addExecutionBlock {
-            print("🟪 [Second operation] third block operation started")
+            print("🟪 [Second operation] third block operation started on thread \(Thread.current)")
         }
         secondOperation.completionBlock = {
-            print("[Second Operation] completion block called")
+            print("[Second Operation] completion block called on thread \(Thread.current)")
         }
         
         let thirdOperation = BlockOperation()
@@ -88,10 +90,10 @@ extension ExploreOperationQueue {
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 1
         queue.addOperation(operation)
-//        queue.addBarrierBlock {
-//            print("Barrier operation 📣")
-//            print(queue.progress)
-//        }
+        queue.addBarrierBlock {
+            print("Barrier operation 📣")
+            print(queue.progress)
+        }
         queue.addOperation(thirdOperation)
         queue.addOperation(secondOperation)
         print("Finished function")

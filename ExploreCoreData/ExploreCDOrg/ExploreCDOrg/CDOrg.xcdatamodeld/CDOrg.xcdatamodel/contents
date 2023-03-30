@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G417" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDCountry" representedClassName="CDCountry" syncable="YES">
+        <attribute name="flag" attributeType="URI"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lifeExpectancy" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="population" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="populationDensity" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDEmployee" inverseName="country" inverseEntity="CDEmployee"/>
+    </entity>
+    <entity name="CDEmployee" representedClassName="CDEmployee" parentEntity="CDPerson" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCountry" inverseName="people" inverseEntity="CDCountry"/>
+    </entity>
+    <entity name="CDPerson" representedClassName="CDPerson" isAbstract="YES" syncable="YES">
+        <attribute name="age" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CDCountry" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="CDPerson" positionX="-63" positionY="27" width="128" height="89"/>
+        <element name="CDEmployee" positionX="-54" positionY="45" width="128" height="74"/>
+    </elements>
+</model>

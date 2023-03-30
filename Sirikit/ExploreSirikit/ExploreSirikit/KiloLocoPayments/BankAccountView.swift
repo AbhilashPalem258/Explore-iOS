@@ -62,6 +62,19 @@ struct BankAccountView: View {
                 if status == INSiriAuthorizationStatus.authorized {
                     print("Authorized To Use Siri")
                 }
+                
+//                for type in ["now playing", "upcoming", "popular"] {
+//                    let intent = MoviesIntent()
+//                    intent.endpoint = type
+//                    intent.suggestedInvocationPhrase = "\(type) Movies"
+//                    
+//                    let interaction = INInteraction(intent: intent, response: nil)
+//                    interaction.donate { error in
+//                        if let error = error {
+//                             print(error.localizedDescription)
+//                        }
+//                    }
+//                }
             }
         }
     }

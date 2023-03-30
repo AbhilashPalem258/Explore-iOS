@@ -7,6 +7,16 @@
 
 import UIKit
 
+
+/*
+ Source:
+ Advances in collection view layout: https://developer.apple.com/videos/play/wwdc2019/215
+ 
+ Definition:
+ 
+ Notes:
+ */
+
 final class iCodeCompositionalCollectionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +74,7 @@ extension iCodeCompositionalCollectionVC {
 }
 extension iCodeCompositionalCollectionVC: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        9
+        15
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

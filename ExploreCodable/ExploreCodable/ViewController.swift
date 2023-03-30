@@ -22,11 +22,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        serializeCar()
         do {
+            try enumBasedParsing()
 //            try encodeA()
 //            try decodeHeaderInformation()
 //            try decodeDates()
 //            try serializeCar()
-            try decodeNonConfirmability()
+//            try decodeNonConfirmability()
 //            print(try decodeLandmarks())
         } catch {
             print("Decoding failed with error: \(error)")
