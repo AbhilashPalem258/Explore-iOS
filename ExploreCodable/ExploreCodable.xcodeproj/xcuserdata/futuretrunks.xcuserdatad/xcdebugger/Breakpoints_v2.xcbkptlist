@@ -55,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "81DE79CF-9DE0-449C-B8D2-B54BAD349EBB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ExploreCodable/Models/Landmark.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "LandmarkJsonModel"
-            landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "09135CBD-9AC5-4CDD-A189-D70B21DCBA27"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

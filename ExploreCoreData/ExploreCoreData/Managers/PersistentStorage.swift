@@ -8,6 +8,16 @@
 import Foundation
 import CoreData
 
+/*
+ Source:
+ https://cocoacasts.com/exploring-the-nspersistentstoredescription-class
+ 
+ Definition:
+ 
+ Notes:
+ - The NSPersistentStoreDescription class defines a property, shouldAddStoreAsynchronously, that determines how the persistent store is added to the persistent store coordinator, synchronously or asynchronously. By default, a persistent store is added synchronously on the calling thread.
+ */
+
 final class PersistentStorage {
     
     private init() {}
@@ -15,6 +25,9 @@ final class PersistentStorage {
     
     // MARK: - Core Data stack
 
+    /*
+     NSPersistentContainer simplifies the creation and management of the Core Data stack by handling the creation of the managed object model (NSManagedObjectModel), persistent store coordinator (NSPersistentStoreCoordinator), and the managed object context (NSManagedObjectContext).
+     */
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "ExploreCoreData")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in

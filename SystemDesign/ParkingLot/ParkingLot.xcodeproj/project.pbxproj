@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007B36142740F55800ED2308 /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B36132740F55800ED2308 /* DeckOfCards.swift */; };
+		007B36162740FDC000ED2308 /* Chess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B36152740FDC000ED2308 /* Chess.swift */; };
+		009256AB2742A0C4000E9B87 /* MovieTicketBookingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009256AA2742A0C4000E9B87 /* MovieTicketBookingSystem.swift */; };
+		009256AD2742A1CD000E9B87 /* HotelManagementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009256AC2742A1CD000E9B87 /* HotelManagementSystem.swift */; };
+		00B3F0C7273EDA3B00BA10E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F0C6273EDA3B00BA10E3 /* main.swift */; };
+		00B3F0CE273EDA8E00BA10E3 /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3F0CD273EDA8E00BA10E3 /* ParkingLot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00B3F0C1273EDA3B00BA10E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		007B36132740F55800ED2308 /* DeckOfCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
+		007B36152740FDC000ED2308 /* Chess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess.swift; sourceTree = "<group>"; };
+		009256AA2742A0C4000E9B87 /* MovieTicketBookingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTicketBookingSystem.swift; sourceTree = "<group>"; };
+		009256AC2742A1CD000E9B87 /* HotelManagementSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelManagementSystem.swift; sourceTree = "<group>"; };
+		00B3F0C3273EDA3B00BA10E3 /* ParkingLot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ParkingLot; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B3F0C6273EDA3B00BA10E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		00B3F0CD273EDA8E00BA10E3 /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00B3F0C0273EDA3B00BA10E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B3F0BA273EDA3B00BA10E3 = {
+			isa = PBXGroup;
+			children = (
+				00B3F0C5273EDA3B00BA10E3 /* ParkingLot */,
+				00B3F0C4273EDA3B00BA10E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00B3F0C4273EDA3B00BA10E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B3F0C3273EDA3B00BA10E3 /* ParkingLot */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00B3F0C5273EDA3B00BA10E3 /* ParkingLot */ = {
+			isa = PBXGroup;
+			children = (
+				00B3F0C6273EDA3B00BA10E3 /* main.swift */,
+				00B3F0CD273EDA8E00BA10E3 /* ParkingLot.swift */,
+				007B36132740F55800ED2308 /* DeckOfCards.swift */,
+				007B36152740FDC000ED2308 /* Chess.swift */,
+				009256AA2742A0C4000E9B87 /* MovieTicketBookingSystem.swift */,
+				009256AC2742A1CD000E9B87 /* HotelManagementSystem.swift */,
+			);
+			path = ParkingLot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00B3F0C2273EDA3B00BA10E3 /* ParkingLot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B3F0CA273EDA3B00BA10E3 /* Build configuration list for PBXNativeTarget "ParkingLot" */;
+			buildPhases = (
+				00B3F0BF273EDA3B00BA10E3 /* Sources */,
+				00B3F0C0273EDA3B00BA10E3 /* Frameworks */,
+				00B3F0C1273EDA3B00BA10E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingLot;
+			productName = ParkingLot;
+			productReference = 00B3F0C3273EDA3B00BA10E3 /* ParkingLot */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00B3F0BB273EDA3B00BA10E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					00B3F0C2273EDA3B00BA10E3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 00B3F0BE273EDA3B00BA10E3 /* Build configuration list for PBXProject "ParkingLot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00B3F0BA273EDA3B00BA10E3;
+			productRefGroup = 00B3F0C4273EDA3B00BA10E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00B3F0C2273EDA3B00BA10E3 /* ParkingLot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00B3F0BF273EDA3B00BA10E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007B36162740FDC000ED2308 /* Chess.swift in Sources */,
+				00B3F0CE273EDA8E00BA10E3 /* ParkingLot.swift in Sources */,
+				007B36142740F55800ED2308 /* DeckOfCards.swift in Sources */,
+				00B3F0C7273EDA3B00BA10E3 /* main.swift in Sources */,
+				009256AD2742A1CD000E9B87 /* HotelManagementSystem.swift in Sources */,
+				009256AB2742A0C4000E9B87 /* MovieTicketBookingSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00B3F0C8273EDA3B00BA10E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00B3F0C9273EDA3B00BA10E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		00B3F0CB273EDA3B00BA10E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML69X72R93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00B3F0CC273EDA3B00BA10E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML69X72R93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B3F0BE273EDA3B00BA10E3 /* Build configuration list for PBXProject "ParkingLot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B3F0C8273EDA3B00BA10E3 /* Debug */,
+				00B3F0C9273EDA3B00BA10E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B3F0CA273EDA3B00BA10E3 /* Build configuration list for PBXNativeTarget "ParkingLot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B3F0CB273EDA3B00BA10E3 /* Debug */,
+				00B3F0CC273EDA3B00BA10E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00B3F0BB273EDA3B00BA10E3 /* Project object */;
+}

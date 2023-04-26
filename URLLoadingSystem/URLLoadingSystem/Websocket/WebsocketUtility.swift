@@ -50,7 +50,7 @@ extension Websocket {
     }
     
     func receiveHandler() {
-        task?.receive {[weak self] result in
+        task?.receive {[weak self] result in 
             switch result {
             case .success(let msg):
                 switch msg {

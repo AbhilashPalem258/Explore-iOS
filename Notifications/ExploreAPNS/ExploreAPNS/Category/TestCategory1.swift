@@ -70,6 +70,7 @@ enum CategoryFactory {
             //The placeholder text to display when the system disables notification previews for the app.
             hiddenPreviewsBodyPlaceholder: "Tap to see notification",
             
+            //https://ashishkakkad.com/2018/08/tutorial-lets-take-quick-dive-grouped-notifications/
             categorySummaryFormat: "Test Category1 Summary",
             options: [
                 //Send dismiss actions to the UNUserNotificationCenter object’s delegate for handling. When we swipe the notification in list and click on clear button it sends a callback to UNUserNotificationCenter object's delegate

@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3A39AC6A-B66C-46E6-9F4F-F75130060FC7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "URLLoadingSystem/URLLoadingSystemApp.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "application(_:handleEventsForBackgroundURLSession:completionHandler:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "CDDE6A3D-8DBA-47FC-8747-28EBC4B6CF2C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

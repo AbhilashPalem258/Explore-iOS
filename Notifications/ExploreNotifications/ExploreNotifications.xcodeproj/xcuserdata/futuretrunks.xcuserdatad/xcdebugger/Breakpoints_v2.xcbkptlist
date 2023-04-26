@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E5A253B9-5CB0-431E-B101-44681C7BADC9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ExploreNotifications/SceneDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "sceneDidBecomeActive(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "322085DB-FB50-4753-84CC-05882464497A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

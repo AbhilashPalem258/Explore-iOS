@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "5F8682E5-0B47-4AD0-A1A9-08C9BE40EE90",
+      "name" : "Configuration 1",
+      "options" : {
+        "areLocalizationScreenshotsEnabled" : true,
+        "language" : "fr"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Explore-Localization.xcodeproj",
+      "identifier" : "00B7FB0E28CE2129000C296D",
+      "name" : "Explore-Localization"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

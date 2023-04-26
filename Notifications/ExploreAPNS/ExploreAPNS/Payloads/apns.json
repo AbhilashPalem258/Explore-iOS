@@ -3,7 +3,9 @@
         "alert": {
             "title": "Test Notification Title",
             "subtitle": "Test SubTitle",
-            "body": "Test Body"
+            "body": "Test Body",
+            "summary-arg" : "Ashish",
+            "summary-arg-count" : 2
         },
         "sound": "default",
         "badge": 1,
